@@ -29,7 +29,7 @@ class Person{
         }
 
         void eat(){
-            System.out.println("is eating something");
+            System.out.println(name + " loves malaysian food and he/she is " + height);
         }
     }
 
