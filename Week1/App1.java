@@ -9,7 +9,12 @@ public class App1 {
         person2.height =2.0;
 
         System.out.println(person1.name + " height's is " + person1.height);
+        person1.eat();
         System.out.print(person2.name + person2.sleeping());
+
+        Student student1 = new Student();
+        student1.eat();
+        person1.eat();
     }
 }
 
