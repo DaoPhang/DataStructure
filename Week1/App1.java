@@ -1,40 +1,55 @@
-public class App1 {
-    public static void main(String[] args){
-        Person person1 = new Person();
-        person1.name = "Bruh";
-        person1.height= 1.8;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package app1;
 
-        Person person2 = new Person();
-        person2.name = "Sara";
-        person2.height =2.0;
-
-        System.out.println(person1.name + " height's is " + person1.height);
-        person1.eat();
-        System.out.print(person2.name + person2.sleeping());
-
-        Student student1 = new Student();
-        student1.eat();
-        person1.eat();
+import java.util.*;
+/**
+ *
+ * @author pensyarah
+ */
+class Person{
+    // class can have
+    // 1. data/attributes
+    String name;
+    double height;
+    // 2. methods
+    void eat(int a, int b, int c){
+        
+        System.out.println(name + " loves malaysian food and he is " + height + " tall");
     }
 }
 
-class Person{
-        //1.data
-        String name;
-        protected double height;
-
-        //2. methods
-        String sleeping(){
-            return "is sleeping";
-        }
-
-        void eat(){
-            System.out.println(name + " loves malaysian food and he/she is " + height);
-        }
-    }
-
 class Student{
+
     void eat(){
-        System.out.println("Student on a diet...");
+        System.out.println("Student on diet...");
     }
+}
+
+public class App1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Person person1 = new Person();
+        person1.name = "Amroooo";
+        person1.height = 1.85;
+        
+        Person person2 = new Person();
+        person2.name = "Sarah";
+        person2.height = 2.0;
+        
+        System.out.println(person1.name);
+        Student student1 = new Student();
+        student1.eat();
+        person1.eat(10, 20, 30);
+        
+        
+        
+        
+    }
+
 }
