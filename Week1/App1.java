@@ -1,14 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package app1;
 
-import java.util.*;
-/**
- *
- * @author pensyarah
- */
 class Person{
     // class can have
     // 1. data/attributes
