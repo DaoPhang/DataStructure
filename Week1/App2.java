@@ -2,9 +2,6 @@ package DS.Week1;
 
 public class App2 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         Machine machine1 = new Machine(10, 20, 30, 40);           // constructor 1
         Machine machine2 = new Machine("Bobby");    // constructor 2
