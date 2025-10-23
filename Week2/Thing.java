@@ -1,3 +1,5 @@
+package DS.Week2;
+
 public class Thing {
     // A LOOK INTO STATC AND FINAL
     

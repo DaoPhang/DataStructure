@@ -1,4 +1,6 @@
 
+package DS.Week1;
+
 class Person{
     // class can have
     // 1. data/attributes

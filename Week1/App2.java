@@ -1,3 +1,5 @@
+package DS.Week1;
+
 public class App2 {
 
     /**

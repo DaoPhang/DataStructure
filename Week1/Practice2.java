@@ -1,3 +1,5 @@
+package DS.Week1;
+
 public class Practice2 {
     public static void main(String[] args){
         Machine machine1 = new Machine();
@@ -5,6 +7,8 @@ public class Practice2 {
         Machine machine3 = new Machine("Champ", 112);
 
         System.out.println(machine1);
+        System.out.println(machine2);
+        System.out.println(machine3);
     }
 }
 

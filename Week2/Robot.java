@@ -1,4 +1,6 @@
 
+package DS.Week2;
+
 public class Robot {
     
     // has data/attributes
