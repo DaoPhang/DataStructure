@@ -1,4 +1,4 @@
-package DS.Lab1;
+package DS.Lab1.MyPoint;
 
 public class TestMyPoint {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package DS.Lab1;
+package DS.Lab1.Account;
 
 public class TestAccount {
     public static void main(String[] args) {

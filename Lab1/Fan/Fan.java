@@ -1,4 +1,4 @@
-package DS.Lab1;
+package DS.Lab1.Fan;
 
 public class Fan {
     

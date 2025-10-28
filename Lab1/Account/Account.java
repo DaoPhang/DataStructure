@@ -1,4 +1,4 @@
-package DS.Lab1;
+package DS.Lab1.Account;
 import java.util.Date;
 
 public class Account {

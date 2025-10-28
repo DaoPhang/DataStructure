@@ -1,6 +1,4 @@
-package DS.Lab1;
-
-import DS.Lab1.Fan;
+package DS.Lab1.Fan;
 
 public class TestFan{
     public static void main (String[] args){
