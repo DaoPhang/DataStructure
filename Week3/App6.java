@@ -23,6 +23,10 @@ public class App6 {
         //upcasting
         Machine2 m3 = c1;
         //parent       //child
+        
+        //example downcasting
+        Camera cam4 = (Camera)new Machine2();
+        //child       //child
     }
 }
 
