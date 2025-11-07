@@ -1,4 +1,4 @@
-package DS.Lab2.q7;
+package DS.Lab3.q7;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package DS.Lab2.GeometricObject;
+package DS.Lab3.GeometricObject;
 
 public class Circle extends GeometricObject{
     private double radius;

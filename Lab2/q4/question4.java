@@ -1,4 +1,4 @@
-package DS.Lab2.q4;
+package DS.Lab3.q4;
 
 import java.util.ArrayList;
 import java.util.Scanner;

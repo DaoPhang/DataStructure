@@ -1,4 +1,4 @@
-package DS.Lab2.q8;
+package DS.Lab3.q8;
 
 public class q8 {
     public static void main(String[] args) {
