@@ -48,5 +48,7 @@ public class PostFixEvaluation {
         System.out.println("12 + 3 += " + evaluatePostFix("12 +3+"));
         
         System.out.println("48 * 3 -= " + evaluatePostFix("48 * 3 -"));
+        
+        System.out.println("12 / 3 += " + evaluatePostFix("12 /3+"));
     }
 }
