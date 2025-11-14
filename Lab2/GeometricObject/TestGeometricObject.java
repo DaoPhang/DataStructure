@@ -1,4 +1,4 @@
-package DS.Lab3.GeometricObject;
+package DS.Lab2.GeometricObject;
 
 public class TestGeometricObject {
     public static void main(String[] args) {

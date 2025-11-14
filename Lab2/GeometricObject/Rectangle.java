@@ -1,4 +1,4 @@
-package DS.Lab3.GeometricObject;
+package DS.Lab2.GeometricObject;
 
 public class Rectangle extends GeometricObject {
     private double width, height;

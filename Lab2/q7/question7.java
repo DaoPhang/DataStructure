@@ -1,4 +1,4 @@
-package DS.Lab3.q7;
+package DS.Lab2.q7;
 
 import java.util.Scanner;
 
@@ -6,17 +6,17 @@ public class question7 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        double[][] m = new double [3][3];
+        double[][] matrix = new double [3][3];
 
         System.out.println("Enter a 3-by-3 matrix:");
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                m[i][j] = sc.nextDouble();
+                matrix[i][j] = sc.nextDouble();
             }
         }
 
-        if (isMarkovMatrix(m)) {
+        if (isMarkovMatrix(matrix)) {
             System.out.println("It is a Markov matrix");
         } else {
             System.out.println("It is NOT a Markov matrix");
