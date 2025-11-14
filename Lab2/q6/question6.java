@@ -23,12 +23,21 @@ public class question6 {
             }
         }
 
-        double[][] c = addMatrix(a, b);
+        double[][] addition = addMatrix(a, b);
+        double[][] subtraction = subMatrix(a, b);
 
         System.out.println("The addition of the two matrix results in: ");
         for(int i = 0; i<2; i++){
             for(int j = 0;j <2; j++){
-                System.out.printf("%.1f ", c[i][j]);
+                System.out.printf("%.1f ", addition[i][j]);
+            }
+            System.out.println();
+        }
+
+        System.out.println("The subtraction of the two matrix results in: ");
+        for(int i = 0; i<2; i++){
+            for(int j = 0;j <2; j++){
+                System.out.printf("%.1f ", subtraction[i][j]);
             }
             System.out.println();
         }
@@ -43,5 +52,16 @@ public class question6 {
             }
         }
         return c;
+    }
+
+    public static double [][] subMatrix(double[][]a, double[][]b){
+        double[][] d = new double [a.length][b.length];
+
+        for(int i = 0; i< a.length; i++){
+            for(int j = 0; j<a[i].length; j++){
+                d[i][j]= a[i][j] - b[i][j];
+            }
+        }
+        return d;
     }
 }
