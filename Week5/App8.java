@@ -5,6 +5,14 @@ package DS.Week5;
 // There is POINTER !!!
 // Bottom Up approach 
 // LIFO: Last In First Out
+//Generic stack implementation
+//data processing vs positioning
+//generic always affect data processing
+//Few Types od generics in JAVA
+/* <T> mostly using T in this course!
+<E>
+<?>
+<> this symbol is known as wrapper */
 
 class Stack{
     // declaring some Stack data or variables
