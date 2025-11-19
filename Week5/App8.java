@@ -34,10 +34,9 @@ class Stack{
 
     }
 
-    // public boolean isFull(){
-    //     //if () -- try yourself!
-    // }
-
+    public boolean isFull() {
+        return top == maxSize;
+    }
     // when can we push items into Stack?
     // (1) when Stack is empty? YES!!
     // (2) when Stack is full? NO
@@ -48,6 +47,7 @@ class Stack{
 
         if (top < maxSize){
             arr[top] = str;
+            top++;
         }
         else{
             System.out.println("Stack is full...");
@@ -61,36 +61,34 @@ class Stack{
     // Can remove item when Stack is empty? NO!
     public String pop(){
         if (!isEmpty()){
-            String temp = peek();   // precaution step to always check what to remove (LIFO)
-            arr[top-1] = null;      // delete the element to remove
+            String temp = peek();
+            arr[top-1] = null;
             top--;
-
             return temp;
-
         }
-
+        return null;
     }
 
 
     // peek always look at the top of the Stack
     // what is the element/items at the top of the Stack?? it is whatever maxSize is, minus 1 (maxSize-1)    
     public String peek(){
-        if (top>0){
-            if (!isEmpty()){
-                return arr[top -1];     // return element at top-1
-            }
-            else{
-                return null;            // otherwise, Stack must be empty! no data to peek!
-            }
-            
-        }
-
+        if (isEmpty())
+            return null;
+        return arr[top - 1];
     }
 
-    // create a method display to show elements of stack
-    // you may use for loop to do this
-    
+    public void display(){
+        if (isEmpty()){
+            System.out.println("Stack is empty.");
+            return;
+        }
 
+        System.out.println("Stack contents (top to bottom):");
+        for (int i = top - 1; i >= 0; i--){
+            System.out.println(arr[i]);
+        }
+    }
 }
 
 public class App8{
@@ -100,9 +98,17 @@ public class App8{
         stack1.push("apple");
         stack1.push("banana");
         stack1.push("cherry");
+        stack1.push("blueberry");
+        stack1.push("durian");
 
-
+        stack1.display();
+        System.out.println();
         
+        System.out.println("Popped: " + stack1.pop());
+        System.out.println("Popped: " + stack1.pop());
+        System.out.println();
+
+        stack1.display();
     }
     
 }
