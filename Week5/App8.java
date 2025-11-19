@@ -71,11 +71,12 @@ class Stack{
 
 
     // peek always look at the top of the Stack
-    // what is the element/items at the top of the Stack?? it is whatever maxSize is, minus 1 (maxSize-1)    
+    // what is the element/items at the top of the Stack?? it is whatever maxSize is, minus 1 (maxSize-1)
     public String peek(){
-        if (isEmpty())
+        if (isEmpty()){
             return null;
-        return arr[top - 1];
+        }
+            return arr[top - 1];
     }
 
     public void display(){
@@ -88,6 +89,14 @@ class Stack{
         for (int i = top - 1; i >= 0; i--){
             System.out.println(arr[i]);
         }
+        
+        System.out.println();
+
+        for (int i = maxSize - 1; i >= 0; i--){
+            System.out.println(arr[i]);
+        }
+
+
     }
 }
 
