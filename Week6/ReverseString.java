@@ -47,5 +47,6 @@ public class ReverseString {
         while(!stack.isEmpty()){
             System.out.print(stack.pop());
         }
+        sc.close();
     }
 }

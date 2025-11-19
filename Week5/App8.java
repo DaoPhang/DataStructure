@@ -1,5 +1,7 @@
 package DS.Week5;
 
+import DS.Week6.Stack;
+
 // Stack Implementation
 // Operations: Push, Pop, Check if empty, Check if full, peek
 // There is POINTER !!!
