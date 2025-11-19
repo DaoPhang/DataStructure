@@ -7,26 +7,26 @@ class Stack {
     int top;
     char arr[];
 
-    Stack(int size){
+    public Stack(int size){
         maxSize = size;
         top = -1;
         arr = new char[maxSize];
     }
 
-    boolean isEmpty() { return top == -1; }
-    boolean isFull() { return top == maxSize - 1; }
+    public boolean isEmpty() { return top == -1; }
+    public boolean isFull() { return top == maxSize - 1; }
 
-    void push(char c){
+    public void push(char c){
         if(!isFull()){
             arr[++top] = c;
         }
     }
 
-    char pop(){
+    public char pop(){
         return (isEmpty()) ? '\0' : arr[top--];
     }
 
-    char peek() {
+    public char peek() {
         return (isEmpty()) ? '\0' : arr[top];
     }
 }
@@ -39,7 +39,7 @@ public class ReverseString {
 
         Stack stack = new Stack(input.length());
 
-        for(int i=0; i<input.length(); i++){
+        for(int i = 0; i < input.length(); i++){
             stack.push(input.charAt(i));
         }
 
@@ -47,6 +47,7 @@ public class ReverseString {
         while(!stack.isEmpty()){
             System.out.print(stack.pop());
         }
+
         sc.close();
     }
 }
