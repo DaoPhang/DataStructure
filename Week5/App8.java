@@ -3,13 +3,13 @@ package DS.Week5;
 // Stack Implementation
 // Operations: Push, Pop, Check if empty, Check if full, peek
 // There is POINTER !!!
-// Bottom Up approach
+// Bottom Up approach 
 // LIFO: Last In First Out
 
 class Stack{
     // declaring some Stack data or variables
     int maxSize;    // the max size of our stack
-    int top;        // stack pointer
+    int top;        // stack pointer 
     String arr[];   // declare an array of type String (so we can work with String data for our Stack)
 
     // Stack should also has its own Constructors
@@ -100,6 +100,8 @@ public class App8{
         stack1.push("apple");
         stack1.push("banana");
         stack1.push("cherry");
+
+
         
     }
     
