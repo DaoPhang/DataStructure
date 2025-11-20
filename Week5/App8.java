@@ -64,7 +64,7 @@ class Stack{
         }
     }
 
-    // pop() removes item fromt the Stack
+    // pop() removes item front the Stack
     // Can remove item when Stack is full? YES
     // Can remove item when Stack is notFull? YES
     // Can remove item when Stack is empty? NO!
