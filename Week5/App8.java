@@ -4,7 +4,7 @@ package DS.Week5;
 // Stack Implementation
 // Operations: Push, Pop, Check if empty, Check if full, peek
 // There is POINTER !!!
-// Bottom Up approach 
+// Bottom Up approach
 // LIFO: Last In First Out
 //Generic stack implementation
 //data processing vs positioning
@@ -18,7 +18,7 @@ package DS.Week5;
 class Stack{
     // declaring some Stack data or variables
     int maxSize;    // the max size of our stack
-    int top;        // stack pointer 
+    int top;        // stack pointer
     String arr[];   // declare an array of type String (so we can work with String data for our Stack)
 
     // Stack should also has its own Constructors
