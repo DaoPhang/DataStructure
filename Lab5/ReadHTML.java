@@ -2,7 +2,6 @@ package DS.Lab5;
 
 import java.io.*;
 import java.util.Stack;
-import java.util.regex.*;
 
 public class ReadHTML {
     public static boolean readHTML(String filename){
