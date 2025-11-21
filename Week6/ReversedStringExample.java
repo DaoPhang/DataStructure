@@ -79,7 +79,7 @@ class StackReverse {
             return;
         }
         System.out.println("Stack contents (top to bottom):");
-        for (int i = top - 1; i >= 0; i--) {
+        for (int i = maxSize - 1; i >= 0; i--) {
             System.out.println(arr[i]);
         }
     }
