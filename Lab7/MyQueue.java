@@ -80,4 +80,89 @@ public class MyQueue<T> {
         }
         System.out.println();
     }
+
+    public static void main(String[] args) {
+        System.out.println("=== Testing MyQueue with Integer ===");
+        MyQueue<Integer> queue = new MyQueue<>();
+        
+        // Test isEmpty on empty queue
+        System.out.println("\n1. Testing isEmpty() on empty queue:");
+        System.out.println("Is queue empty? " + queue.isEmpty());
+        
+        // Test peek on empty queue
+        System.out.println("\n2. Testing peek() on empty queue:");
+        System.out.println("Peek: " + queue.peek());
+        
+        // Test display on empty queue
+        System.out.println("\n3. Testing display() on empty queue:");
+        queue.display();
+        
+        // Enqueue elements
+        System.out.println("\n4. Enqueueing elements: 10, 20, 30, 40, 50");
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.enqueue(30);
+        queue.enqueue(40);
+        queue.enqueue(50);
+        
+        // Display queue
+        System.out.println("\n5. Displaying queue after enqueue:");
+        queue.display();
+        
+        // Test isEmpty on non-empty queue
+        System.out.println("\n6. Testing isEmpty() on non-empty queue:");
+        System.out.println("Is queue empty? " + queue.isEmpty());
+        
+        // Test peek
+        System.out.println("\n7. Testing peek() - should return first element:");
+        System.out.println("Peek: " + queue.peek());
+        System.out.println("Queue after peek (should be unchanged):");
+        queue.display();
+        
+        // Dequeue elements
+        System.out.println("\n8. Dequeueing elements:");
+        System.out.println("Dequeued: " + queue.dequeue());
+        queue.display();
+        System.out.println("Dequeued: " + queue.dequeue());
+        queue.display();
+        System.out.println("Dequeued: " + queue.dequeue());
+        queue.display();
+        
+        // Test peek after some dequeues
+        System.out.println("\n9. Testing peek() after some dequeues:");
+        System.out.println("Peek: " + queue.peek());
+        
+        // Dequeue remaining elements
+        System.out.println("\n10. Dequeueing remaining elements:");
+        System.out.println("Dequeued: " + queue.dequeue());
+        System.out.println("Dequeued: " + queue.dequeue());
+        
+        // Test dequeue on empty queue
+        System.out.println("\n11. Testing dequeue() on empty queue:");
+        System.out.println("Dequeued: " + queue.dequeue());
+        
+        // Display empty queue
+        System.out.println("\n12. Displaying empty queue:");
+        queue.display();
+        
+        // Test with String type
+        System.out.println("\n\n=== Testing MyQueue with String ===");
+        MyQueue<String> stringQueue = new MyQueue<>();
+        
+        System.out.println("\nEnqueueing: Apple, Banana, Cherry");
+        stringQueue.enqueue("Apple");
+        stringQueue.enqueue("Banana");
+        stringQueue.enqueue("Cherry");
+        
+        System.out.println("\nDisplaying string queue:");
+        stringQueue.display();
+        
+        System.out.println("\nPeek: " + stringQueue.peek());
+        
+        System.out.println("\nDequeueing all:");
+        while (!stringQueue.isEmpty()) {
+            System.out.println("Dequeued: " + stringQueue.dequeue());
+            stringQueue.display();
+        }
+    }
 }
