@@ -41,14 +41,7 @@ public class Q5 {
         purchaseQueue.enqueue(new StockPurchase(shares, price));
         System.out.println("Bought " + shares + " shares at $" + price);
     }
-    
-    /**
-     * Sell shares at a given price.
-     * Uses FIFO - always sells the oldest shares first.
-     * @param shares Number of shares to sell
-     * @param price Sale price per share
-     * @return The profit from this sale
-     */
+
     public double sell(int shares, double price) {
         if (shares <= 0) {
             return 0.0;
@@ -72,7 +65,6 @@ public class Q5 {
                 
                 System.out.println("  Sold " + sharesSold + " shares (bought at $" +sold.price + "): Profit = $" + profitFromThisPurchase);
             } else {
-                // Partially sell from this purchase
                 int sharesToSell = remainingToSell;
                 double profitFromThisPurchase = sharesToSell * (price - oldestPurchase.price);
                 profit += profitFromThisPurchase;
@@ -91,18 +83,11 @@ public class Q5 {
         System.out.println("Profit from this sale: $" + profit);
         return profit;
     }
-    
-    /**
-     * Get the total profit from all sales.
-     * @return Total profit
-     */
+
     public double getTotalProfit() {
         return totalProfit;
     }
-    
-    /**
-     * Display remaining shares in the queue.
-     */
+
     public void displayRemainingShares() {
         if (purchaseQueue.isEmpty()) {
             System.out.println("No remaining shares.");
