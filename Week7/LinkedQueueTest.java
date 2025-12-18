@@ -9,6 +9,7 @@ public class LinkedQueueTest {
         
         prices.display();
         prices.dequeue();
+        prices.dequeue();
         prices.display();
     }
 }
