@@ -39,7 +39,6 @@ public class GenericQueue<T> {
         }
 
         // Constructor
-        @SuppressWarnings("unchecked")
         public Queue(int size) {
             this.head = 0;
             this.tail = 0;
@@ -68,7 +67,6 @@ public class GenericQueue<T> {
             }
         }
 
-        @SuppressWarnings("unchecked")
         public void enqueueMany(String multiStr) {
             String[] tempStr = multiStr.split(", ");  // Delimiter: comma + space
             for (String str : tempStr) {
@@ -76,7 +74,6 @@ public class GenericQueue<T> {
             }
         }
 
-        @SuppressWarnings("unchecked")
         public void pushMany(String multiStr) {
             String[] tempStr = multiStr.split(", ");  // Delimiter: comma + space
             for (String str : tempStr) {
