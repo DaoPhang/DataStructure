@@ -1,3 +1,5 @@
+package DS.Week7;
+
 public class GenericQueue1 {
     public static void main(String[] args) {
         Queue1<Integer> q1 = new Queue1<>(10);
@@ -22,7 +24,6 @@ class Queue1<T>{
     private T[] arr;
     
     public Queue1() {
-        this(10); // Default size of 10
     }
 
     @SuppressWarnings("unchecked")
