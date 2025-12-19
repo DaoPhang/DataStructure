@@ -117,11 +117,11 @@ class Queue1<T>{
     }
 
     public T peek(){
-    if(!isEmpty()){
-        return arr[head];
+        if(!isEmpty()){
+            return arr[head];
+        }
+        return null;
     }
-    return null;
-}
 
 }
 
