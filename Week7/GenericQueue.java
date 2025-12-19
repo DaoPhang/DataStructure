@@ -99,12 +99,18 @@ public class GenericQueue<T> {
         }
 
         public void dequeueAll() {
-            if (!isEmpty()) {
+            /*if (!isEmpty()) {
                 System.out.println("\nThere are " + tail + " items in the queue. Removing all.... ");
                 while (!isEmpty()) {
                     dequeue();
                 }
+            }*/
+            this.head =0;
+            this.tail=0;
+            for(int i =0; i<maxSize; i++){
+                arr[i] = null;
             }
+            System.out.println("All items has been removed");
         }
 
         public void popAll() {
