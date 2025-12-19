@@ -52,12 +52,11 @@ class Queue1<T>{
         }
     }
 
-    public void enqueueMany (String multiStr){
-        String[] tempStr = multiStr.split(", ");
-        for(String str : tempStr){
-            enqueue((T)str);
-        }
+    public void enqueueMany(T[] items){
+    for(T item : items){
+        enqueue(item);
     }
+}
 
     public void pushMany(String multiStr){
         String[] tempStr = multiStr.split(", ");
@@ -116,4 +115,13 @@ class Queue1<T>{
             System.out.println("The queue is empty");
         }
     }
+
+    public T peek(){
+    if(!isEmpty()){
+        return arr[head];
+    }
+    return null;
 }
+
+}
+
