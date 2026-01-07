@@ -43,9 +43,13 @@ class LinkedList1{
             //a)point to the head
             //b)while not point to null, keep traversing
             //c)increment counter
-
+            Node current = this.head;
+            while(current != null){
+                length++;
+                current = current.getNextNode();
+            }
             
-            
+            return length;
         }
 
         public void deleteFromHead(){
@@ -53,7 +57,6 @@ class LinkedList1{
         }
 
         public Node find(int data){
-
             Node current = this.head;
             while(current != null){
                 if(current.getData() == data){
