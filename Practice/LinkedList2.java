@@ -5,7 +5,6 @@ public class LinkedList2 {
 
     public void insertAtHead(int data){
         Node1 newNode1 = new Node1(data);
-
         newNode1.setNextNode1(this.head);
         this.head = newNode1;
     }
